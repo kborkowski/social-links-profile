@@ -30,6 +30,8 @@
 }
 
 body {
+    color:var(--white);
+    background-color: var(--grey-900);
     font-family: var(--font-sans);
     font-optical-sizing: auto;
     font-weight: 400;
@@ -38,4 +40,23 @@ body {
     line-height: var(--line-preset-1);
 
 
+}
+
+h2 {
+  font-size: var(--text-preset-1);
+  font-weight: 600;
+}
+
+strong {
+  color: var(--green);
+}
+
+ul [role="list"] {
+  list-style-type: none;
+}
+
+img,picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
