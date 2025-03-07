@@ -80,6 +80,9 @@ img,picture {
   padding: var(--spacing-300) max(var(--spacing-300), calc(50%- var(--max-child-width / 2)));
  }
 
+ .align-center {
+     text-align: center;
+ }
  
 .button {
     --link-color:var(--grey-700);
@@ -104,4 +107,34 @@ img,picture {
     }
 
 
+}
+
+.card{
+    background-color: var(--grey-800);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    padding: var(--spacing-300);
+
+    @media (min-width:400px) {
+        padding: var(--spacing-500)
+    }
+
+}
+
+.card__image img {
+ margin-inline: auto;
+ width:88px;
+ height: 88px;
+ border-radius: 50%;
+ object-fit: cover;
+ aspect-ratio: 1/1;
+
+}
+
+.card__info * {
+    --flow-space: var(--spacing-50);
+}
+
+.card__links ul {
+    --flow-space: var(--spacing-200);
 }
