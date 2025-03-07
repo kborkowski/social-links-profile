@@ -60,3 +60,28 @@ img,picture {
   max-width: 100%;
   height: auto;
 }
+
+.button {
+    --link-color:var(--grey-700);
+    --link-text-color:var(--white);
+    cursor: pointer;
+    background-color: var(--link-color);
+    color: var(--link-text-color);
+    border:0;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font:inherit;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: var(--spacing-150);
+
+    &:hover, &:focus {
+        --link-color:var(--green);
+        --link-text-color:var(--grey-900);
+    
+    }
+
+
+}
