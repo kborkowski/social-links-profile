@@ -52,6 +52,7 @@ body {
 h2 {
   font-size: var(--text-preset-1);
   font-weight: 600;
+  letter-spacing:0.2px;
 }
 
 strong {
@@ -73,11 +74,12 @@ img,picture {
 }
 
 .challenge-wrapper {
-    --max-child-width: var(--max-width, 320);
+--max-child-width: var(--max-width, 320px);
   display: grid;
   place-items: center;
   min-height: 100vh;
-  padding: var(--spacing-300) max(var(--spacing-300), calc(50%- var(--max-child-width / 2)));
+  padding: var(--spacing-300)
+   max(var(--spacing-300), calc(50% - var(--max-child-width) / 2));
  }
 
  .align-center {
