@@ -6,25 +6,25 @@
 --grey-800: hsl(0, 0%, 12%);
 --grey-900: hsl(0, 0%, 8%);
 
---spacing-50: 4px;
---spacing-100: 8px;
---spacing-150: 12px;
---spacing-200: 16px;
---spacing-300: 24px;
---spacing-500: 40px;
+--spacing-50: 0.25rem;
+--spacing-100: 0.5rem;
+--spacing-150: 0.75rem;
+--spacing-200: 1rem;
+--spacing-300: 1.5rem;
+--spacing-500: 2.5rem;
 
 --radius-lg:var(--spacing-150);
 --radius-sm:var(--spacing-100);
 
 --font-sans: "Inter", sans-serif;
---text-preset-1: 24px;
---text-preset-2: 14px;
+--text-preset-1: 1.5rem;
+--text-preset-2: 0.875rem;
 --line-preset-1:1.5;
 
---max-width: 456px;
+--max-width: 28.5rem;
 
-@media (min-width: 800px) {
-    --max-width: 384px;
+@media (min-width: 50rem) {
+    --max-width: 24rem;
     
 }
 
@@ -74,12 +74,12 @@ img,picture {
 }
 
 .challenge-wrapper {
---max-child-width: var(--max-width, 320px);
+--max-child-width: var(--max-width, 20rem);
   display: grid;
   place-items: center;
   min-height: 100vh;
   padding: var(--spacing-300)
-   max(var(--spacing-300), calc(50% - var(--max-child-width) / 2));
+   max(var(--spacing-300), calc(50% - var (--max-child-width) / 2));
  }
 
  .align-center {
@@ -91,7 +91,7 @@ img,picture {
     --link-text-color:var(--white);
     cursor: pointer;
     background-color: var(--link-color);
-    color: var(--link-text-color);
+    color: var (--link-text-color);
     border:0;
     border-radius: var(--radius-sm);
     text-decoration: none;
@@ -117,7 +117,7 @@ img,picture {
     width: 100%;
     padding: var(--spacing-300);
 
-    @media (min-width:400px) {
+    @media (min-width:25rem) {
         padding: var(--spacing-500)
     }
 
@@ -125,8 +125,8 @@ img,picture {
 
 .card__image img {
  margin-inline: auto;
- width:88px;
- height: 88px;
+ width:5.5rem;
+ height: 5.5rem;
  border-radius: 50%;
  object-fit: cover;
  aspect-ratio: 1/1;
