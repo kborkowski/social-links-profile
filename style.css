@@ -21,6 +21,13 @@
 --text-preset-2: 14px;
 --line-preset-1:1.5;
 
+--max-width: 456px;
+
+@media (min-width: 800px) {
+    --max-width: 384px;
+    
+}
+
 }
 
 * {
@@ -51,7 +58,7 @@ strong {
   color: var(--green);
 }
 
-ul [role="list"] {
+ul[role="list"] {
   list-style-type: none;
 }
 
@@ -61,6 +68,19 @@ img,picture {
   height: auto;
 }
 
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--spacing-300));
+}
+
+.challenge-wrapper {
+    --max-child-width: var(--max-width, 320);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: var(--spacing-300) max(var(--spacing-300), calc(50%- var(--max-child-width / 2)));
+ }
+
+ 
 .button {
     --link-color:var(--grey-700);
     --link-text-color:var(--white);
